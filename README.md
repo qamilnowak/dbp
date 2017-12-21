@@ -6,5 +6,6 @@ DBPedia Lucyna dla Tradera
   ./install run
 ```
 
+AWARE: On windows clone to `/Users/`
 
 Source: [Lucene quickstart](https://github.com/dbpedia-spotlight/lucene-quickstarter)

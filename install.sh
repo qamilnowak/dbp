@@ -6,6 +6,8 @@ if [[ $command == "build" ]];then
     docker-compose build
 elif [[ $command == "up" ]];then
     docker-compose up
+elif [[ $command == "upd" ]];then
+    docker-compose up -d
 elif [[ $command == "down" ]];then
     docker-compose down 
 elif [[ $command == "lucyna" ]];then
