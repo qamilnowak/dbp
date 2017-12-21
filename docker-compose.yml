@@ -1,0 +1,25 @@
+version: '2'
+
+volumes:
+    dbpedia_spotlight:
+        driver: local
+    dbpedia_data:
+        driver: local
+    dbpedia_wikipedia:
+        driver: local
+
+services:
+
+    dbpedia:
+        #build:
+        #    context: ./
+        image: dbpediaspotlight/lucene-quickstarter # if not build with root
+        volumes:
+            #- dbpedia_data:/
+            - dbpedia_spotlight:/mnt/dbpedia/spotlight
+            - dbpedia_data:/mnt/dbpedia/dbpedia_data
+            - dbpedia_wikipedia:/mnt/dbpedia/wikipedia
+        #ports:
+        #    - 27018:27017
+        stdin_open: true
+        tty: true
