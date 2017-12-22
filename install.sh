@@ -11,5 +11,5 @@ elif [[ $command == "upd" ]];then
 elif [[ $command == "down" ]];then
     docker-compose down 
 elif [[ $command == "lucyna" ]];then
-    docker exec -it lucyna_dbpedia_1 bash   
+    docker exec -it lucyna_dbpedia_1 bash
 fi
